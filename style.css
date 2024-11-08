@@ -461,7 +461,8 @@ footer ul li a{
 
 
 
-@media(max-width:500px){
+@media (min-width: 380px) and (max-width:500px){
+      
 
     #menubar{
         font-size: 1.6rem;
