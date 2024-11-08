@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+
+}
+
+
+header{
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    background-color: rgba(0, 0, 0, 0.929);
+    backdrop-filter: blur(8px);
+    color: white;
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    z-index: 100;
+}
+
+.logo{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.navlist{
+    display: flex;
+    gap: 2rem;
+}
+
+li a{
+    position: relative;
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+}
+li a::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    left: 0;
+    height: 5px;
+    top: 25px;
+    border-radius: 1rem;
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(to right,rgb(0,157,255),rgb(255,0,255));
+}
+
+li a:hover::before{
+    
+    width: 100%;
+}
+
+.github{
+    padding: 0.8rem 1.5rem;
+    border-radius: 3rem;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem ;
+    cursor: pointer;
+    text-wrap: nowrap;
+    
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(to right,rgb(0,157,255),rgb(255,0,255));
+    
+}
+.github a{
+    color: white;
+}
+
+.github:hover{
+    background: linear-gradient(to right,rgb(0,157,255),rgb(255,0,255));
+    transform: scale(1.1);
+}
+
+#menubar{
+    font-size: 2rem;
+    display: none;
+}
+
+section{
+    min-height: 100vh;
+    padding: 5rem 12%;
+    width: 100%;
+    position: relative;
+    border: 3px solid black;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about .aboutcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about img{
+    width: 30vw;
+    border-radius: 50%;
+    /* background: rgb(111, 239, 243); */
+}
+
+
+.infobox{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.infobox h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.infobox h1{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.infobox span{
+    background: linear-gradient(to right,rgb(0,157,255),rgb(255,0,255));
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+}
+.btngrp{
+    display: flex;
+    padding: 1rem 0; 
+    /* done by me */
+    gap: 1rem;
+}
+.btn{
+    cursor: pointer;
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid black;
+    font-weight: 500;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+}
+#downloadcv a{
+    color: black;
+}
+#downloadcv a:hover{
+    color: white;
+}
+
+.btn:hover
+{
+    background-color: black;
+    color: white;
+}
+
+.socials{
+    /* padding: 1rem; */
+    /* margin-top: 1rem; */
+    gap: 2rem;
+    display: flex;
+
+}
+.socials a i{
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 350;
+}
+.socials a{
+    
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+
+.socials a:hover{
+    transform: scale(1.2);
+}
+
+
+
+.sectiontitle{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+
+}
+
+
+.experinece-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.experience img{
+    width: 24vw;
+    border-radius: 2rem;
+    border: 2px solid black;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+.gridcard{
+    border: 2px solid black;
+    border-radius: 3rem;
+    padding: 1.4rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    cursor: pointer;
+    align-items: baseline;
+    transition: 0.2s ease-in-out;
+}
+.gridcard:hover{
+    transform: scale(1.03);
+    background-color: black;
+    color: white;
+}
+
+
+.gridcard i{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.gridcard span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    background: linear-gradient(to right,rgb(0,157,255),rgb(255,0,255));
+    background-clip: text;
+    color: transparent;
+
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(219,219,219);
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom,rgb(0,157,255),rgb(255,0,255));
+}
+
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 2rem;
+}
+
+.projectcard{
+    padding: 1rem 2rem 0.2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    border: 2px solid black;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.projectcard:hover{
+    background-color: black;
+    color: white;
+    transform: translateY(-10px)scale(1.02);
+}
+.projectcard img{
+    width: 15vw;
+    border-radius: 1rem;
+}
+.projectcard:hover .btn{
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+}
+
+.projectcard h3{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+.input-box input{
+    border-radius: 3rem;
+    border: 2px solid black;
+    padding: 2rem 10rem;
+    font-size: 3rem;
+}
+
+.input{
+    position: relative;
+}
+
+.input i{
+    position: absolute;
+    font-size: 4rem;
+    top: 50%;
+    left: 10px;
+    transform: translate(50%, -50%);
+}
+
+
+footer{
+    border-top: 2px solid black;
+    bottom: 0;
+    left: 0;
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+footer ul li a{
+    font-weight: 400 ;
+    color: black;
+}
+
+.copyright{
+    font-weight: 300;
+    margin-top: 1rem;
+}
+
+/* Responsiveness */
+
+
+@media(max-width:1280px){
+    header{
+        padding: 1rem 2rem;
+        gap: 2rem;
+    }
+    .about .aboutcontainer{
+        gap: 3rem;
+
+    }
+    .experinece-info{
+        flex-direction: column;
+    }
+    .input-box{
+        padding: 2rem 5rem;
+        font-size: 2.5rem;
+    }
+    .input-box::placeholder{
+        font-size: 2.5rem;
+    }
+    .input-box i{
+        font-size: 2.5rem;
+    }
+    
+}
+@media(max-width:768px){
+    header{
+        padding: 1rem 1rem;
+        gap: 1rem;
+    }
+    header .logo{
+        font-size: 1rem;
+    }
+    header .github{
+        display: none;
+
+    }
+    .input-box input{
+        padding: 1rem 2rem;
+        font-size: 1.8rem;
+    }
+    .input-box input::placeholder{
+        font-size: 1.5rem;
+    }
+    .input-box i{
+        display: none;
+    }
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .experinece-info img{
+        width: 80%;
+    }
+
+}
+@media(max-width:600px){
+
+
+    header #menubar{
+        display: block;
+        font-size: 1.3rem;
+        /* font-size: 2rem; */
+
+        
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        color: white;
+        background: black;
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem;
+        border-radius: 3rem;
+        
+        display: none;
+    }
+    .navlist li{
+        margin-top: 1.5rem;
+        padding: 1rem;
+    }
+    .navlist.active{
+        display: block;
+
+    }
+    header{
+        padding: 1rem 5rem;
+
+    gap: 2.5rem;
+    }
+
+    header .logo{
+        font-size: 1.5rem;
+
+
+    }
+    .aboutcontainer{
+        flex-direction: column;
+        /* line-height: 5rem; */
+    }
+    .aboutcontainer img{
+        width: 80%;
+    }
+    .input-box input{
+        padding: 0.5rem 3rem;
+        width: 80%;
+        font-size: 1.5rem;
+    }
+    .input-box input::placeholder{
+        font-size: 1.5rem;
+
+    }
+    footer ul{
+        gap: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.about-heading {
+    /* display: flex;
+    flex-direction: column; */
+
+}
+
+.about-heading h3{
+    text-align: left;
+    font-size: 3rem;
+
+}
+
+.about-heading h1{
+    text-align: left;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.about-heading button{
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid black;
+    font-weight: 500;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+    font-size: 1.2rem;
+}
+
+.about-heading button:hover
+{
+    background-color: black;
+    color: white;
+}
+.details p{
+    margin-top: 1.5rem;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* my changes:  */
+
+
+
+
+#avatar2{
+    filter: grayscale(100%);
+    fill-opacity: 0.8;
+}
