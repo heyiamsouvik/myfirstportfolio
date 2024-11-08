@@ -525,7 +525,7 @@ footer ul li a{
     font-size: 2rem;
     cursor: pointer;
     border-radius: 2.5rem;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1rem;
     border: 2px solid black;
     font-weight: 500;
     text-wrap: nowrap;
@@ -623,6 +623,9 @@ footer ul li a{
 
 
 #avatar2{
+
     filter: grayscale(100%);
     fill-opacity: 0.8;
+
+
 }
