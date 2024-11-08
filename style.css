@@ -329,7 +329,7 @@ section{
 .input-box input{
     border-radius: 3rem;
     border: 2px solid black;
-    padding: 2rem 10rem;
+    padding: 2.5rem 10rem;
     font-size: 3rem;
 }
 
@@ -339,7 +339,7 @@ section{
 
 .input i{
     position: absolute;
-    font-size: 4rem;
+    font-size: 3rem;
     top: 50%;
     left: 10px;
     transform: translate(50%, -50%);
