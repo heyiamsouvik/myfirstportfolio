@@ -631,7 +631,7 @@ footer ul li a{
     align-items: flex-start;
     gap: 1rem; /* 15px equivalent */
     padding: 1.25rem; /* 20px equivalent */
-    
+    border: 2px solid black;
     border-radius: 0.625rem; /* 10px equivalent */
     max-width: 25rem; /* 400px equivalent */
     margin: 0 auto;
