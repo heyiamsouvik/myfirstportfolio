@@ -317,32 +317,24 @@ section{
 }
 
 
-.input-box{
+.contactbox{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    gap: 1rem;
-    margin-top: 3rem;
+    gap: 1.5rem;
+    
 }
-.input-box input{
-    border-radius: 3rem;
-    border: 2px solid black;
-    padding: 2.5rem 10rem;
-    font-size: 3rem;
-}
-
-.input{
-    position: relative;
-}
-
-.input i{
-    position: absolute;
-    font-size: 3rem;
-    top: 50%;
-    left: 10px;
-    transform: translate(50%, -50%);
+.contactbox .mail{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;}
+    
+.contact-item{
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -520,7 +512,9 @@ footer ul li a{
     .input-box input{
         padding: 0.5rem 1.8rem;
         /* width: 80%; */
+        text-wrap: nowrap;
         font-size: 1.5rem;
+        font-size: 1.1rem;
     }
     #submit{
     font-size: 2rem;
@@ -629,4 +623,47 @@ footer ul li a{
     fill-opacity: 0.8;
 
 
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem; /* 15px equivalent */
+    padding: 1.25rem; /* 20px equivalent */
+    
+    border-radius: 0.625rem; /* 10px equivalent */
+    max-width: 25rem; /* 400px equivalent */
+    margin: 0 auto;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.625rem; /* 10px equivalent */
+    padding: 0.625rem; /* 10px equivalent */
+    /* border: 0.0625rem solid #ddd; */
+    border-radius: 0.3125rem; /* 5px equivalent */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #333;
+}
+
+.contact-item:hover {
+    background-color: #333; /* black background on hover */
+    color: #fff; /* white text on hover */
+}
+
+.contact-item i {
+    font-size: 1.5rem; /* 24px equivalent */
+    color: inherit; /* Inherits color from contact-item */
+    transition: color 0.3s ease;
+}
+
+.contact-item h2 {
+    font-size: 1rem; /* 16px equivalent */
+    color: inherit; /* Inherits color from contact-item */
+    margin: 0;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
